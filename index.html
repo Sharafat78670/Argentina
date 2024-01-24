@@ -8,9 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-
-
-
 </head>
 
 <body>
@@ -45,10 +42,11 @@
                             <li><a>Pages</a></li>
                             <li><a>Blog</a></li>
                             <li><a>Contact</a></li>
-                          <li><input type="text" placeholder="Search" class="input input-bordered w-24" /></li>  
+                          <li></li>  
                     </ul>
                 </div>
-                <div class="navbar-end">
+                <div class="navbar-end flex gap-2">
+                  <input type="text" placeholder="Search" class="input input-bordered w-48 hidden lg:flex" />
                     <button class="btn btn-active btn-secondary">Secondary</button>
                 </div>
             </div>
@@ -300,12 +298,12 @@
                     <p class="w-1/2 ml-auto mr-auto mt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
                 </div>
             </div>
-            <div class="faq-content grid grid-cols-1 md:justify-items-center gap-9 mt-4 md:grid-cols-2 ">
+            <div class="faq-content grid grid-cols-1 justify-items-center gap-1 mt-4  md:grid-cols-2 border-[1px] border-gray-700 rounded-md p-10 bg-slate-300 ">
               <div class="faq-img ml-auto mr-auto w-[400px] h-[400px]">
                 <img src="Images/faq.png" alt="">
               </div>
               <div class="faq-text">
-                <div class="join join-vertical w-[500px]">
+                <div class="join join-vertical mt-2 bg-white md:w-[600px]">
                   <div class="collapse collapse-arrow join-item border border-base-300">
                     <input type="radio" name="my-accordion-4" checked="checked" /> 
                     <div class="collapse-title text-xl font-medium">
@@ -373,7 +371,7 @@
                 </div>
             </div>
             <div class="form-container grid grid-cols-1 gap-4 justify-around md:grid-cols-2  ">
-              <div class="address-content flex flex-col gap-2 justify-items-center mt-10 ml-auto mr-auto border-2 border-red-400 rounded-md bou">
+              <div class="address-content flex flex-col gap-2 justify-items-center mt-10 ml-auto mr-auto p-4 border-[1px] border-blue-400 rounded-md bou">
                 <div class="text-left p-4 bg-orange-50 rounded-md w-70 leading-2">
                  <figure > <img src="Images/phone.png" alt=""></figure>
                   <p class="text-[12px] mt-3 text-gray-500">Phone Number:</p>
@@ -391,7 +389,7 @@
                  </div>
               </div>
               <div class="form-content md:ml-[-100px]">
-                <div class="card shrink-0 w-[500px]   ">
+                <div class="card shrink-0 md:w-[600px]   ">
                   <form class="card-body grid grid-cols-1 gap-4 justify-around md:grid-cols-2">
                     <div class="form-control">
                       <label class="label">
